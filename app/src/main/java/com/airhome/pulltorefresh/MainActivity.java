@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements WListView.OnRefre
         mListView = (WListView) findViewById(R.id.w_listView);
         mHandler = new Handler();
         setData();
-        mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, mData);
+        mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_expandable_list_item_1, mData);
         mListView.setAdapter(mAdapter);
         mListView.setOnRefreshListener(this);
     }
