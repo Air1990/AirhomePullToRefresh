@@ -1,6 +1,7 @@
 package com.airhome.pulltorefresh;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
@@ -48,7 +49,7 @@ public class WListViewHeader extends RelativeLayout {
         float screenDensity = metrics.density;
 
         mHeaderContainer = new LinearLayout(getContext());
-        mHeaderContainer.setBackgroundColor(0xCCC);
+        mHeaderContainer.setBackgroundColor(Color.LTGRAY);
         mHeaderContainer.setGravity(Gravity.BOTTOM);
         LinearLayout.LayoutParams containerParams = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, 0);
         mHeaderContainer.setLayoutParams(containerParams);
